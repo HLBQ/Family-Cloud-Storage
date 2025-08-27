@@ -14,39 +14,36 @@ http://heilibaiqi.top/warehousetools/003/
 
 ## 功能特性Features
 
-支持文件上传和下载
-Supports file upload and download
+1.支持文件上传和下载
+(Supports file upload and download)
 
-支持文件夹上传和下载
-Supports folder upload and download
+2.支持文件夹上传和下载
+(Supports folder upload and download)
 
-支持在线预览文件
-Supports online file preview
+3.支持在线预览文件
+(Supports online file preview)
 
-支持文件重命名和删除
-Supports file renaming and deletion
+4.支持文件重命名和删除
+(Supports file renaming and deletion)
 
-支持语言自动切换
-Supports automatic language switching
+5.支持语言自动切换
+(Supports automatic language switching)
 
 ## 使用方法Usage
 
-1. 启动服务器: 运行 “start.bat”脚本(Start server: start "start.bat")
+1. 启动服务器(Start server): 运行 “start.bat”脚本
 
-2. 浏览器访问: http://localhost:3000 (Access via browser: http://localhost:3000)
+2. 正常访问(Access via browser): http://localhost:3000 
 
-3. 只读模式访问: http://localhost:7860(Read-only mode access: http://localhost:7860)
+3. 只读模式访问(Read-only mode access): http://localhost:7860 
 
 ## 技术栈Technology Stack
 
-前端: HTML, CSS, JavaScript
-Frontend: HTML, CSS, JavaScript
+前端(Frontend): HTML, CSS, JavaScript
 
-后端: Node.js, Express
-Backend: Node.js, Express
+后端(Backend): Node.js, Express
 
-文件上传: Multer
-File upload: Multer
+文件上传(File upload): Multer
 
 ## 注意事项Notes
 

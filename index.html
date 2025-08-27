@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>内网文件共享系统</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="header-top">
+                <h1>内网文件共享</h1>
+            </div>
+<div class="upload-area">
+    <input type="file" id="file-input" multiple>
+    <input type="file" id="folder-input" webkitdirectory directory multiple style="display:none">
+    <button id="upload-btn">上传文件</button>
+    <button id="upload-folder-btn">上传文件夹</button>
+    <button id="create-folder-btn">新建文件夹</button>
+</div>
+        </header>
+        
+        <div class="file-list">
+            <div class="breadcrumb">
+                <button id="home-btn" class="nav-btn">根目录</button>
+                <button id="up-btn" class="nav-btn">上一级</button>
+                <span class="path">全部文件</span>
+            </div>
+            <div id="create-folder-modal" class="modal">
+                <div class="modal-content">
+                    <h3>新建文件夹</h3>
+                    <div class="modal-body">
+                        <input type="text" id="folder-name-input" placeholder="请输入文件夹名称">
+                    </div>
+                    <div class="modal-actions">
+                        <button id="folder-confirm">确认</button>
+                        <button id="folder-cancel">取消</button>
+                    </div>
+                </div>
+            </div>
+            <table>
+                <thead>
+                    <tr>
+                        <th>文件名</th>
+                        <th>大小</th>
+                        <th>修改日期</th>
+                        <th>操作</th>
+                    </tr>
+                </thead>
+                <tbody id="file-table">
+                    <!-- 文件列表将通过JavaScript动态加载 -->
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <!-- 重命名弹窗 -->
+    <div id="rename-modal" class="modal">
+        <div class="modal-content">
+            <h3>重命名</h3>
+            <div class="modal-body">
+                <input type="text" id="rename-input" placeholder="请输入新名称">
+            </div>
+            <div class="modal-actions">
+                <button id="rename-confirm">确认</button>
+                <button id="rename-cancel">取消</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- 预览弹窗 -->
+    <div id="preview-modal" class="modal">
+        <div class="preview-container">
+            <div class="preview-header">
+                <span class="preview-title">文件预览</span>
+                <div class="preview-close" onclick="closePreview()">×</div>
+            </div>
+            <div id="preview-content" class="preview-body"></div>
+            <div class="preview-footer">
+                <div class="preview-controls"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 上传进度弹窗 -->
+<div id="upload-progress-modal" class="modal">
+    <div class="modal-content">
+        <h3>上传进度</h3>
+        <div class="progress-container">
+            <div class="progress-info">
+                <div id="upload-progress-text" class="progress-text">0%</div>
+            </div>
+            <div class="progress-bar">
+                <div id="upload-progress-fill" class="progress-fill"></div>
+            </div>
+            <div class="progress-info">
+                <div id="upload-speed-text" class="speed-text">0 KB/s</div>
+            </div>
+        </div>
+    </div>
+</div>
+      </div>
+    </div>
+
+    <!-- 删除确认弹窗 -->
+    <div id="delete-modal" class="modal">
+        <div class="modal-content">
+            <h3>删除确认</h3>
+            <div class="modal-body">
+                <p id="delete-message"></p>
+            </div>
+            <div class="modal-actions">
+                <button id="delete-confirm">确认删除</button>
+                <button id="delete-cancel">取消</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="i18n.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

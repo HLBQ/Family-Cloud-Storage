@@ -32,10 +32,7 @@ https://heilibaiqi.top/warehousetools/003/
 ## 使用方法Usage
 
 1. 启动服务器(Start server): 运行 “start.bat”脚本
-
-2. 正常访问(Access via browser): http://localhost:3000 
-
-3. 只读模式访问(Read-only mode access): http://localhost:7860 
+2. 访问: http://localhost:3000 
 
 ## 技术栈Technology Stack
 

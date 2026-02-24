@@ -8,9 +8,6 @@ This is a web-based internal file sharing tool
 这是一个实用的小工具,你可以在你的闲置电脑上部署该工具,这样你就相当于有了一个本地云盘,可以上传文件，下载文件,上传的文件会保存到目录下的uploads文件夹下,但要注意这是一个共享的内网网盘,所以没有安全限制,请不要对外开放,否则有可能导致黑客入侵!!!
 This is a practical gadget, You can deploy the tool on your idle computer, So that you have a local cloud disk, You can upload files, Download files, Uploaded files will be saved to the uploads folder in the directory, But note that this is a shared intranet network disk, So there are no security restrictions, Please do not open it to the public, otherwise it may lead to hacker intrusion!!
 
-## 镜像网站Chinese "mirror" website
-
-https://heilibaiqi.top/warehousetools/003/
 
 ## 功能特性Features
 

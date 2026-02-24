@@ -58,3 +58,8 @@ Automatically detects browser language
 
 ## 许可证License
 MIT License
+
+
+注意该项目将不会再更新，目前项的唯一打包版本，仅支持中文，此版本有配置文件，可以修改相关内容，但可能存在一些问题，已经无法修改
+Note that this project will no longer be updated. The current version is the only packaged version and only supports Chinese. This version has a configuration file, which allows you to modify related content, but there may be some issues, and it can no longer be changed.
+
